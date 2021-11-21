@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'AndreaBilarosa';
+  src: local('AndreaBellarosa'),
+    url('/fonts/AndreaBellarosa/AndreaBellarosa.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oldstyle';
+  src: local('Oldstyle'), url('/fonts/Oldstyle/Oldstyle.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OldstyleItalic';
+  src: local('OldstyleItalic'), url('/fonts/OldstyleItalic/OldstyleItalic.ttf') format('truetype');
+}
+
+body {
+  font-family: Oldstyle;
+}
+h1 {
+  font-family: AndreaBilarosa;
+}
