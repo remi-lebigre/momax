@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: 'OldstyleCaps';
+  src: local('OldstyleCaps'), url('/fonts/Oldstyle/OldstyleCaps.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'OldstyleItalic';
   src: local('OldstyleItalic'), url('/fonts/OldstyleItalic/OldstyleItalic.ttf') format('truetype');
 }
@@ -17,6 +22,15 @@
 body {
   font-family: Oldstyle;
 }
-h1 {
+
+.text-oldstyle {
+  font-family: Oldstyle;
+}
+
+.text-oldstylecaps {
+  font-family: OldstyleCaps;
+}
+
+.text-andrea {
   font-family: AndreaBilarosa;
 }

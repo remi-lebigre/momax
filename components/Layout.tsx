@@ -5,7 +5,7 @@ import Header from './Header'
 
 const Layout = ({ children, title }: { children: ReactNode; title: string }) => {
   return (
-    <div className='bg-beige'>
+    <div className='bg-beige p-12'>
       <Head>
         <title>{title}</title>
         <meta name='description' content='Mariage Morgane & Maxime' />
