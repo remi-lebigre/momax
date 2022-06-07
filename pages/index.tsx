@@ -20,12 +20,77 @@ const Home: NextPage = () => {
         <figcaption>MDN editors</figcaption>
         <blockquote className='text-4xl text-oldstylecaps'>
           "Make up to me is a form of expression that enhances who I already am. Wearing La Bouche
-          Rouge gives me more confidence and helps me embrace my boldness within. Whether it's what
-          I choose to wear or how I live my life."
+          Rouge gives me more confidence and helps me embrace my boldness within. Whether It's what
+          I choose to wear or how I live my life"
         </blockquote>
       </figure>
       <div className='p-8'>
-        <h2 className='text-4xl'>Cérémonie</h2>
+        <h2 className='text-4xl'>La date</h2>
+      </div>
+      <div className='p-8'>
+        <h2 className='text-[150px] uppercase text-center relative z-10 -mb-24'>Ecosse</h2>
+        <div className='columns-3'>
+          <div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_1.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_4.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+          </div>
+          <div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_2.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_5.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+          </div>
+          <div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_3.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+            <div className='relative aspect-square'>
+              <Image
+                src='/photos/ecosse_6.png'
+                alt="Photo d'Écosse"
+                layout='fill'
+                objectFit='contain'
+              />
+            </div>
+          </div>
+        </div>
+        <h2 className='text-[150px] uppercase text-center relative z-10 -mt-24'>Glencoe</h2>
+      </div>
+      <div className='flex justify-center py-36'>
+        <p className='text-[150px] text-andrea whitespace-nowrap'>
+          Mariage - Voyage - Remerciements
+        </p>
       </div>
     </Layout>
   )
