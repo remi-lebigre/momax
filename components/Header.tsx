@@ -21,7 +21,7 @@ const Header = () => (
         </li>
       </ul>
     </nav>
-    <ul className='flex gap-8 text-gray-400'>
+    <ul className='flex gap-8 text-lightblack'>
       <li>16 août 2022</li>
       <li>Ecosse, Glenco</li>
     </ul>
