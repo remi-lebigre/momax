@@ -20,9 +20,9 @@ const Home: NextPage = () => {
         <figure className='w-3/4'>
           <figcaption>MDN editors</figcaption>
           <blockquote className='text-4xl text-oldstylecaps'>
-            "Make up to me is a form of expression that enhances who I already am. Wearing La Bouche
-            Rouge gives me more confidence and helps me embrace my boldness within. Whether It's
-            what I choose to wear or how I live my life"
+          &quot;Make up to me is a form of expression that enhances who I already am. Wearing La Bouche
+            Rouge gives me more confidence and helps me embrace my boldness within. Whether It&apos;s
+            what I choose to wear or how I live my life&quot;
           </blockquote>
         </figure>
       </div>
@@ -45,17 +45,17 @@ const Home: NextPage = () => {
               <h3 className='text-xl text-lightblack mb-4 mt-24'>Lieux</h3>
               <p className='text-lightblack text-2xl'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s,.
+                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
               </p>
               <h3 className='text-xl text-lightblack mb-4 mt-24'>Lodge</h3>
               <p className='text-lightblack text-2xl'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s,.
+                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
               </p>
               <h3 className='text-xl text-lightblack mb-4 mt-24'>Contact</h3>
               <p className='text-lightblack text-2xl'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s,.
+                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
               </p>
             </div>
           </div>
