@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
+import Image from '../components/Image'
 import Layout from '../components/Layout'
-import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
@@ -12,8 +12,6 @@ const Home: NextPage = () => {
         <Image
           src='/photos/morgane_maxime_in_da_woods.png'
           alt="Morgane et Maxime qui s'embrassent sous les sapins"
-          layout='fill'
-          objectFit='cover'
         />
       </div>
       <div className='flex justify-center pt-12'>
@@ -68,23 +66,19 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='pt-8 md:p-8'>
-        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10 mb-4 md:-mb-24'>Ecosse</h2>
+        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10 mb-4'>Ecosse</h2>
         <div className='md:columns-3'>
           <div>
             <div className='relative aspect-square mb-4'>
               <Image
                 src='/photos/ecosse_1.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
             <div className='relative aspect-square mb-4 md:mb-0'>
               <Image
                 src='/photos/ecosse_4.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
           </div>
@@ -93,16 +87,12 @@ const Home: NextPage = () => {
               <Image
                 src='/photos/ecosse_2.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
             <div className='relative aspect-square mb-4 md:mb-0'>
               <Image
                 src='/photos/ecosse_5.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
           </div>
@@ -111,21 +101,17 @@ const Home: NextPage = () => {
               <Image
                 src='/photos/ecosse_3.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
             <div className='relative aspect-square mb-4 md:mb-0'>
               <Image
                 src='/photos/ecosse_6.png'
                 alt="Photo d'Écosse"
-                layout='fill'
-                objectFit='cover'
               />
             </div>
           </div>
         </div>
-        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10 md:-mt-20'>Glencoe</h2>
+        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10'>Glencoe</h2>
       </div>
       <div className='flex justify-center py-36 overflow-hidden -mx-4 md:-mx-12'>
         <p className='text-4xl md:text-[150px] text-andrea whitespace-nowrap'>
