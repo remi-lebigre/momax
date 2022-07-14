@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Layout from '../components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -18,11 +19,16 @@ const Home: NextPage = () => {
       </div>
       <div className='flex justify-center pt-12'>
         <figure className='w-3/4'>
-          <figcaption>MDN editors</figcaption>
+          <figcaption>Mo</figcaption>
           <blockquote className='text-4xl text-oldstylecaps'>
-          &quot;Make up to me is a form of expression that enhances who I already am. Wearing La Bouche
-            Rouge gives me more confidence and helps me embrace my boldness within. Whether It&apos;s
-            what I choose to wear or how I live my life&quot;
+            Love you to the moon and back
+          </blockquote>
+        </figure>
+      </div><div className='flex justify-center pt-12'>
+        <figure className='w-3/4'>
+          <figcaption>Max</figcaption>
+          <blockquote className='text-4xl text-oldstylecaps'>
+            SHE SAID YES
           </blockquote>
         </figure>
       </div>
@@ -42,21 +48,19 @@ const Home: NextPage = () => {
           </div>
           <div className='w-full'>
             <div className='max-w-[400px] pt-12'>
-              <h3 className='text-xl text-lightblack mb-4 mt-24'>Lieux</h3>
-              <p className='text-lightblack text-2xl'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
-              </p>
-              <h3 className='text-xl text-lightblack mb-4 mt-24'>Lodge</h3>
-              <p className='text-lightblack text-2xl'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
-              </p>
-              <h3 className='text-xl text-lightblack mb-4 mt-24'>Contact</h3>
-              <p className='text-lightblack text-2xl'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,.
-              </p>
+              <h3 className='text-xl text-lightblack mb-4 mt-24'>Le lieu</h3>
+              <a className='text-lightblack text-2xl' href="https://g.page/stmarysspace?share" target="_blank" rel="noopener noreferrer">St. Mary&apos;s, Fasnacloich, Appin PA38 48J, Royaume-Uni</a>
+              <h3 className='text-xl text-lightblack mb-4 mt-24'>Le lodge</h3>
+              <a className='text-lightblack text-2xl' href="https://goo.gl/maps/6wYJodqVukoyQ4dr7" target="_blank" rel="noopener noreferrer">Appin Holiday Homes, Appin, Argyll, PA38 4BQ</a>
+              <h3 className='text-xl text-lightblack mb-4 mt-24'>Pratique</h3>
+              <ul>
+                <li>
+                  <a className='text-lightblack text-2xl' href="/docs/mariage_ecosse_infos_pratiques.pdf" target="_blank" rel="noopener noreferrer">Infos pratiques</a>
+                </li>
+                <li>
+                  <a className='text-lightblack text-2xl' href="https://docs.google.com/spreadsheets/d/1DXYP2do3QjjiHRlNDyd14_9ZLu4DatDt-_9a_C230pU/edit#gid=1579618427" target="_blank" rel="noopener noreferrer">Document d&apos;organisation véhhicules/logements</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -121,7 +125,7 @@ const Home: NextPage = () => {
         </div>
         <h2 className='text-[150px] uppercase text-center relative z-10 -mt-20'>Glencoe</h2>
       </div>
-      <div className='flex justify-center py-36 overflow-hidden'>
+      <div className='flex justify-center py-36 overflow-hidden -ml-12 -mr-12'>
         <p className='text-[150px] text-andrea whitespace-nowrap'>
           Mariage - Voyage - Remerciements
         </p>

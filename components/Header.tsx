@@ -1,12 +1,19 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
-const Header = () => (
+
+const Header: FC = () => (
   <header className={'h-20 flex justify-between'}>
     <nav>
       <ul className='flex gap-8'>
         <li>
           <Link href='/'>
             <a>Mariage</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='/ceremonie'>
+            <a>La cérémonie</a>
           </Link>
         </li>
         <li>
