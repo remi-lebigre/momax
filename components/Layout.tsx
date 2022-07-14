@@ -7,7 +7,7 @@ export interface LayoutProps {
   title: string
 }
 const Layout: FC<LayoutProps> = ({ children, title }) => (
-  <div className='bg-beige p-12'>
+  <div className='bg-beige p-4 md:p-12'>
     <Head>
       <title>{title}</title>
       <meta name='description' content='Mariage Morgane & Maxime' />
