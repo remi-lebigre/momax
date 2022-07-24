@@ -16,16 +16,8 @@ const Home: NextPage = () => {
       </div>
       <div className='flex justify-center pt-12'>
         <figure className='w-full md:w-3/4'>
-          <figcaption>Mo</figcaption>
-          <blockquote className='text-4xl text-oldstylecaps'>
-            Love you to the moon and back
-          </blockquote>
-        </figure>
-      </div><div className='flex justify-center pt-12'>
-        <figure className='w-full md:w-3/4'>
-          <figcaption>Max</figcaption>
-          <blockquote className='text-4xl text-oldstylecaps'>
-            SHE SAID YES
+          <blockquote className='text-6xl text-center text-andrea'>
+            We are quite ready for another adventure
           </blockquote>
         </figure>
       </div>
@@ -58,7 +50,7 @@ const Home: NextPage = () => {
                   <a className='text-2xl' href="/docs/mariage_ecosse_infos_pratiques.pdf" target="_blank" rel="noopener noreferrer">- Infos pratiques</a>
                 </li>
                 <li>
-                  <a className='text-2xl' href="https://docs.google.com/spreadsheets/d/1DXYP2do3QjjiHRlNDyd14_9ZLu4DatDt-_9a_C230pU/edit#gid=1579618427" target="_blank" rel="noopener noreferrer">- Document d&apos;organisation véhhicules/logements</a>
+                  <a className='text-2xl' href="https://docs.google.com/spreadsheets/d/1DXYP2do3QjjiHRlNDyd14_9ZLu4DatDt-_9a_C230pU/edit#gid=1579618427" target="_blank" rel="noopener noreferrer">- Document d&apos;organisation véhicules/logements</a>
                 </li>
               </ul>
             </div>

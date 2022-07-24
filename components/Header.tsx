@@ -15,18 +15,13 @@ const Header: FC = () => (
             </Link>
           </li>
           <li>
-            <Link href='/ceremonie'>
-              <a>La cérémonie</a>
+            <Link href='/jour-j'>
+              <a>Le jour J</a>
             </Link>
           </li>
           <li>
             <Link href='/voyage'>
               <a>Voyage</a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/remerciements'>
-              <a>Remerciements</a>
             </Link>
           </li>
         </ul>
@@ -40,8 +35,8 @@ const Header: FC = () => (
           </Link>
         </li>
         <li>
-          <Link href='/ceremonie'>
-            <a>La cérémonie</a>
+          <Link href='/jour-j'>
+            <a>Le jour J</a>
           </Link>
         </li>
         <li>
@@ -49,16 +44,11 @@ const Header: FC = () => (
             <a>Voyage</a>
           </Link>
         </li>
-        <li>
-          <Link href='/remerciements'>
-            <a>Remerciements</a>
-          </Link>
-        </li>
       </ul>
     </nav>
     <ul className='flex gap-8 text-lightblack hidden md:block'>
       <li>16 août 2022</li>
-      <li>Ecosse, Glenco</li>
+      <li>Ecosse, Glencoe</li>
     </ul>
   </header >
 )
