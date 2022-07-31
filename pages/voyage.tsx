@@ -98,7 +98,7 @@ const VoyagePage: NextPage = () => {
       <Subtitle>Après la cérémonie...</Subtitle>
       <section className='mt-12 relative'>
         {place && (
-          <div className='absolute left-0 bottom-0 md:top-4 md:left-4 p-4 w-[300px] h-auto border z-10 bg-beige rounded-lg'>
+          <div className='absolute left-0 bottom-0 md:bottom-auto md:top-4 md:left-4 p-4 w-[300px] h-auto border z-10 bg-beige rounded-lg'>
             <div className='text-lg'>{place}</div>
             <div className='w-full h-[150px] md:h-[250px] relative mt-2'>
               <Image src={imgSrc} alt='marker photo' />
