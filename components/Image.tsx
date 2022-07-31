@@ -1,15 +1,17 @@
 import NextImage, { ImageProps } from 'next/image'
 import { FC } from 'react'
 
-
-const Image: FC<ImageProps> = ({ src,
-    alt,
-}) => <NextImage
-        src={src}
-        alt={alt}
-        layout={'fill'}
-        objectFit={'cover'}
-        className={'bg-brown'}
-    />
+interface ImgProps extends ImageProps {
+  noLoadBg?: boolean
+}
+const Image: FC<ImgProps> = ({ src, alt, noLoadBg = false }) => (
+  <NextImage
+    src={src}
+    alt={alt}
+    layout={'fill'}
+    objectFit={'cover'}
+    className={noLoadBg ? '' : 'bg-brown'}
+  />
+)
 
 export default Image
