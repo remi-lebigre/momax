@@ -17,7 +17,7 @@ interface MarkerProp {
   coords: [number, number]
   name: string
   imgSrc: string
-  desc?: string
+  desc: string
 }
 const markers: Record<string, MarkerProp> = {
   elgol: {
@@ -102,6 +102,7 @@ const markers: Record<string, MarkerProp> = {
     coords: [-0.4171846, 51.6929761],
     name: 'Harry Potter Studios',
     imgSrc: '/photos/map/harry_potter_studios.png',
+    desc: 'EXPECTO PATRONUM',
   },
 }
 const VoyagePage: NextPage = () => {
