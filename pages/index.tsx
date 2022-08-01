@@ -38,6 +38,9 @@ const Home: NextPage = () => {
           </div>
           <div className='md:max-w-[400px] md:pt-12'>
             <h3 className='text-xl text-lightblack mb-4 mt-12 md:mt-24'>Le lieu</h3>
+            <div className='relative aspect-[2] mb-4'>
+              <Image src='/photos/trois_soeurs.png' alt="Photo d'Écosse" noLoadBg />
+            </div>
             <a
               className='text-2xl underline'
               href='https://g.page/stmarysspace?share'
@@ -47,9 +50,6 @@ const Home: NextPage = () => {
               St. Mary&apos;s, Fasnacloich, Appin PA38 48J, Royaume-Uni
             </a>
             <h3 className='text-xl text-lightblack mb-4 mt-12 md:mt-24'>Le lodge</h3>
-            <div className='relative aspect-[2] mb-4'>
-              <Image src='/photos/trois_soeurs.png' alt="Photo d'Écosse" noLoadBg />
-            </div>
             <a
               className='text-2xl underline'
               href='https://goo.gl/maps/6wYJodqVukoyQ4dr7'
@@ -69,17 +69,6 @@ const Home: NextPage = () => {
                   rel='noopener noreferrer'
                 >
                   Infos pratiques
-                </a>
-              </li>
-              <li>
-                -{' '}
-                <a
-                  className='text-2xl underline'
-                  href='https://docs.google.com/spreadsheets/d/1DXYP2do3QjjiHRlNDyd14_9ZLu4DatDt-_9a_C230pU/edit#gid=1579618427'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Document d&apos;organisation véhicules/logements
                 </a>
               </li>
               <li>
