@@ -70,7 +70,7 @@ const CeremoniePage: NextPage = () => (
     </div>
     <section>
       <p className='text-center'>
-        Brunch ensemble, visite de Glennfinnan (train d&apos;Harry Potter). Autres activités à
+        Brunch ensemble, visite de Glenfinnan (train d&apos;Harry Potter). Autres activités à
         déterminer !
       </p>
       <div className='flex justify-center'>
