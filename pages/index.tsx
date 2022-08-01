@@ -23,66 +23,72 @@ const Home: NextPage = () => {
       </div>
       <div className='md:px-8 py-12 md:py-48'>
         <div className='flex flex-col md:flex-row md:columns-2 justify-center'>
-          <div className='flex md:justify-end md:pr-48'>
-            <div className='md:max-w-[200px]'>
-              <h3 className='text-xl text-lightblack mb-4'>La date</h3>
-              <p className='text-4xl leading-[48px] hidden md:block'>
-                Mardi
-                <br />
-                16 Août
-                <br />
-                2022
-              </p>
-              <p className='text-4xl leading-[48px] md:hidden'>Mardi 16 Août 2022</p>
-            </div>
+          <div>
+            <h3 className='text-xl mb-4'>La date</h3>
+            <p className='text-6xl leading-[60px] hidden md:block'>
+              Mardi
+              <br />
+              16 Août
+              <br />
+              2022
+            </p>
+            <p className='text-4xl leading-[48px] md:hidden'>Mardi 16 Août 2022</p>
           </div>
-          <div className='md:max-w-[400px] md:pt-12'>
-            <h3 className='text-xl text-lightblack mb-4 mt-12 md:mt-24'>Le lieu</h3>
-            <div className='relative aspect-[2] mb-4'>
-              <Image src='/photos/trois_soeurs.png' alt="Photo d'Écosse" noLoadBg />
+          <div className='md:pt-12'>
+            <div className='md:max-w-[400px] md:ml-48'>
+              <h3 className='text-xl mb-4 mt-12 md:mt-32'>Le lieu</h3>
+              <div className='relative aspect-[2] mb-4'>
+                <Image src='/photos/trois_soeurs.png' alt="Photo d'Écosse" noLoadBg />
+              </div>
+              <a
+                className='text-2xl text-lightblack underline'
+                href='https://g.page/stmarysspace?share'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                St. Mary&apos;s, Fasnacloich, Appin PA38 48J, Royaume-Uni
+              </a>
             </div>
-            <a
-              className='text-2xl underline'
-              href='https://g.page/stmarysspace?share'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              St. Mary&apos;s, Fasnacloich, Appin PA38 48J, Royaume-Uni
-            </a>
-            <h3 className='text-xl text-lightblack mb-4 mt-12 md:mt-24'>Le lodge</h3>
-            <a
-              className='text-2xl underline'
-              href='https://goo.gl/maps/6wYJodqVukoyQ4dr7'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Appin Holiday Homes, Appin, Argyll, PA38 4BQ
-            </a>
-            <h3 className='text-xl text-lightblack mb-4 mt-12 md:mt-24'>Pratique</h3>
-            <ul>
-              <li>
-                -{' '}
-                <a
-                  className='text-2xl underline'
-                  href='/docs/mariage_ecosse_infos_pratiques.pdf'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Infos pratiques
-                </a>
-              </li>
-              <li>
-                -{' '}
-                <a
-                  className='text-2xl underline'
-                  href='https://docs.google.com/document/d/1Ww7FEMrNtE34Nkh1TMIy-15Nm-rtowXE6zFOBB1NJg4/edit'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Adresse logements
-                </a>
-              </li>
-            </ul>
+
+            <div className='md:max-w-[400px] md:pl-36 md:pt-36 pt-12'>
+              <h3 className='text-xl mb-4'>Le lodge</h3>
+              <a
+                className='text-2xl text-lightblack underline'
+                href='https://goo.gl/maps/6wYJodqVukoyQ4dr7'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Appin Holiday Homes, Appin, Argyll, PA38 4BQ
+              </a>
+            </div>
+
+            <div>
+              <h3 className='text-xl mb-4 mt-12 md:mt-36'>Pratique</h3>
+              <ul>
+                <li>
+                  -{' '}
+                  <a
+                    className='text-2xl text-lightblack underline'
+                    href='/docs/mariage_ecosse_infos_pratiques.pdf'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Infos pratiques
+                  </a>
+                </li>
+                <li>
+                  -{' '}
+                  <a
+                    className='text-2xl text-lightblack underline'
+                    href='https://docs.google.com/document/d/1Ww7FEMrNtE34Nkh1TMIy-15Nm-rtowXE6zFOBB1NJg4/edit'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Adresse logements
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
