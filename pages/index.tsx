@@ -1,11 +1,33 @@
 import type { NextPage } from 'next'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
+import { useInView } from 'react-intersection-observer'
+
+const textAnimation = (inView: boolean) =>
+  `transform transition duration-700 ${!inView && 'translate-y-5 opacity-0'} ${
+    inView && 'translate-y-0 opacity-100'
+  }`
 
 const Home: NextPage = () => {
+  const { ref: refTitle, inView: inViewTitle } = useInView({ triggerOnce: true })
+  const { ref: refSubtitle, inView: inViewSubtitle } = useInView({ triggerOnce: true })
+  const { ref: refDate, inView: inViewDate } = useInView({ triggerOnce: true, threshold: 1 })
+  const { ref: refTitleEcosse, inView: inViewTitleEcosse } = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  })
+  const { ref: refTitleGlencoe, inView: inViewTitleGlencoe } = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  })
   return (
     <Layout title={'Mariage Morgane & Maxime'}>
-      <h1 className='bottom-20 text-center text-4xl md:text-8xl text-oldstylecaps my-16'>
+      <h1
+        ref={refTitle}
+        className={`${textAnimation(
+          inViewTitle
+        )} bottom-20 text-center text-4xl md:text-8xl text-oldstylecaps my-16`}
+      >
         Morgane <span className='text-andrea px-8 inline-block'>et</span> Maxime
       </h1>
       <div className='relative aspect-square max-w-lg w-full md:mx-auto'>
@@ -16,7 +38,12 @@ const Home: NextPage = () => {
       </div>
       <div className='flex justify-center pt-12'>
         <figure className='w-full md:w-3/4'>
-          <blockquote className='text-6xl text-center text-andrea'>
+          <blockquote
+            ref={refSubtitle}
+            className={`text-6xl text-center text-andrea delay-200 ${textAnimation(
+              inViewSubtitle
+            )}`}
+          >
             We are quite ready for another adventure
           </blockquote>
         </figure>
@@ -25,7 +52,10 @@ const Home: NextPage = () => {
         <div className='flex flex-col md:flex-row md:columns-2 justify-center'>
           <div>
             <h3 className='text-xl mb-4'>La date</h3>
-            <p className='text-6xl leading-[60px] hidden md:block'>
+            <p
+              className={`text-6xl leading-[60px] hidden md:block ${textAnimation(inViewDate)}`}
+              ref={refDate}
+            >
               Mardi
               <br />
               16 Août
@@ -93,7 +123,12 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='pt-8 md:p-8'>
-        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10 mb-4'>
+        <h2
+          className={`text-4xl md:text-[150px] uppercase text-center relative z-10 mb-4 ${textAnimation(
+            inViewTitleEcosse
+          )}`}
+          ref={refTitleEcosse}
+        >
           Ecosse
         </h2>
         <div className='md:columns-3'>
@@ -122,7 +157,14 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <h2 className='text-4xl md:text-[150px] uppercase text-center relative z-10'>Glencoe</h2>
+        <h2
+          className={`text-4xl md:text-[150px] uppercase text-center relative z-10 ${textAnimation(
+            inViewTitleGlencoe
+          )}`}
+          ref={refTitleGlencoe}
+        >
+          Glencoe
+        </h2>
       </div>
       <div className='flex justify-center py-36 overflow-hidden -mx-4 md:-mx-12'>
         <p className='text-4xl md:text-[150px] text-andrea whitespace-nowrap footerScroll'>
