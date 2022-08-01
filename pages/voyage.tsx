@@ -48,11 +48,13 @@ const markers: Record<string, MarkerProp> = {
     coords: [-5.4533769, 56.8702586],
     name: 'Glenfinnan',
     imgSrc: '/photos/map/glenfinnan.png',
+    desc: 'Faites coucou au Poudlard Express ! 2h de marche avec une super vue sur le viaduc et le Loch pour les courageux ou  15mn depuis le parking pour juste le coucou au viaduc pour les petits marcheurs ! (passage du train à 15h)',
   },
   lochness: {
     coords: [-4.7884006, 57.2738948],
     name: 'Loch Ness',
     imgSrc: '/photos/map/nessie.webp',
+    desc: "Le plus grand, le plus noir, le plus profond de toute l'écosse. Le monstre du Loch Ness et.... Beaucoup de canards !",
   },
   fairyPools: {
     coords: [-6.2604894, 57.250346],
