@@ -25,6 +25,11 @@ const Header: FC = () => (
               <a>Voyage</a>
             </Link>
           </li>
+          <li>
+            <Link href='/remerciements'>
+              <a>Remerciements</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -43,6 +48,11 @@ const Header: FC = () => (
         <li>
           <Link href='/voyage'>
             <a>Voyage</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='/remerciements'>
+            <a>Remerciements</a>
           </Link>
         </li>
       </ul>
